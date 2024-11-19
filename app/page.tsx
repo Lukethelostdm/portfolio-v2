@@ -2,6 +2,7 @@ import Intro from '@/components/intro'
 import Image from 'next/image'
 import BlogHome from '@/components/blog-page'
 import ProjectPage from '@/components/projects'
+import Project from '@/components/projects'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Intro />
       </div>
       <BlogHome/>
+      <Project/>
     </section>
   )
 }

@@ -1,9 +1,12 @@
 ---
-title: "The Changing Tides of Sable Bay"
+title: "Sable Bay"
 date: "2024-11-15"
 author: "Luke and Anna"
-tags: ["Sable Bay", "Crime Families", "Graphic Novel"]
+tag: "Creative"
+img: "/post-images/writing.jpg"
 ---
+
+
 
 # The Changing Tides of Sable Bay
 
@@ -24,6 +27,5 @@ Sable Bay is a city of shadows and ambition, where loyalty is tested, and power 
 
 The Oddities are on the rise, shaking the foundation of Sable Bay's underworld. But not everyone is ready to embrace change. Who will survive the upheaval?
 
----
 
 *Stay tuned for more updates on the world of Sable Bay!*
