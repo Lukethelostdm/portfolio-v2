@@ -14,21 +14,21 @@ const projects: Project[] = [
     title: 'Project 1',
     description: 'This is a description of project 1.',
     link: 'link/to/project1/case-study',
-    tags: ['HTML'] // Add tags as needed
+    tags: ['HTML'] 
   },
   {
     image: '/post-images/writing.jpg',
     title: 'Project 2',
     description: 'This is a description of project 2.',
     link: 'link/to/project2/case-study',
-    tags: ['CSS', 'Javascript'] // Add tags as needed
+    tags: ['CSS', 'Javascript'] 
   },
   {
     image: 'path/to/project3/image.jpg',
     title: 'Project 3',
     description: 'This is a description of project 3.',
     link: 'link/to/project3/case-study',
-    tags: [] // No tags for this project
+    tags: ['React'] 
   }
 ];
 
@@ -36,6 +36,7 @@ const tagStyles: Record<string, string> = {
   HTML: 'bg-blue-100 text-blue-600',
   CSS: 'bg-green-100 text-green-600',
   JavaScript: 'bg-red-100 text-red-600',
+  React: 'bg-purple-100 text-purple-600',
   // Add more tags and styles as needed
 };
 
