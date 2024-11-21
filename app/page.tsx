@@ -1,8 +1,9 @@
 import Intro from '@/components/intro'
 import Image from 'next/image'
 import BlogHome from '@/components/blog-page'
-import ProjectPage from '@/components/projects'
 import Project from '@/components/projects'
+import TechStack from '@/components/tech-stack'
+import ContactForm from '@/components/contact-form'
 
 export default function Home() {
   return (
@@ -10,8 +11,11 @@ export default function Home() {
       <div className='container max-w-3xl'>
         <Intro />
       </div>
-      <BlogHome/>
+      <ContactForm/>
       <Project/>
+      <TechStack />
+      <BlogHome/>
+      
     </section>
   )
 }

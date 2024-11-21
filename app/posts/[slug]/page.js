@@ -59,7 +59,7 @@ export default async function Post({ params }) {
       </p>
 
       {/* Article Content */}
-      <div className="prose prose-lg dark:prose-invert px-4">
+      <div className="prose prose-lg dark:prose-invert">
         <Markdown rehypePlugins={[rehypeRaw]}>{post.content}</Markdown>
       </div>
     </div>
