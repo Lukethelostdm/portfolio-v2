@@ -37,8 +37,8 @@ export default function ContactForm() {
     },
   });
 
-  // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log("Form submitted:", values);
     send(values);
   }
 
@@ -47,7 +47,7 @@ export default function ContactForm() {
       <CardHeader>
         <CardTitle>Contact Us</CardTitle>
         <CardDescription>
-          Fill out the form below and we'll get back to you as soon as possible.
+          Fill out the form below and I'll get back to you as soon as possible.
         </CardDescription>
       </CardHeader>
       <CardContent>
