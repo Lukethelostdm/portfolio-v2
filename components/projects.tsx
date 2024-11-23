@@ -10,7 +10,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    image: 'path/to/project1/image.jpg',
+    image: '/post-images/writing.jpg',
     title: 'Project 1',
     description: 'This is a description of project 1.',
     link: 'link/to/project1/case-study',
@@ -24,8 +24,15 @@ const projects: Project[] = [
     tags: ['CSS', 'Javascript'] 
   },
   {
-    image: 'path/to/project3/image.jpg',
+    image: '/post-images/writing.jpg',
     title: 'Project 3',
+    description: 'This is a description of project 3.',
+    link: 'link/to/project3/case-study',
+    tags: ['React'] 
+  },
+  {
+    image: '/post-images/writing.jpg',
+    title: 'Project 4',
     description: 'This is a description of project 3.',
     link: 'link/to/project3/case-study',
     tags: ['React'] 
@@ -65,9 +72,9 @@ export default function Project() {
       <h2 className='mb-8 text-center text-3xl font-bold dark:text-white'>
         Projects
       </h2>
-      <div className='lg grid grid-cols-1 gap-4 md:grid-cols-2'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8'>
         {projects.map((project, index) => (
-          <div
+          <div 
             key={index}
             className='overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg dark:bg-gray-800'
           >

@@ -1,11 +1,11 @@
 // app/page.js
-import { getAllPosts } from '@/lib/posts'
+import { getAllPosts } from '@/lib/fullposts'
 
-export default function HomePage() {
+export default function BlogHome() {
   const posts = getAllPosts()
 
   return (
-    <div className="max-w-6xl mx-auto py-8">
+    <div className="max-w-6xl mx-auto py-8 my-20">
       <h2 className="text-3xl dark:text-white font-bold text-center mb-8">Case Studies</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (

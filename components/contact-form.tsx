@@ -43,7 +43,7 @@ export default function ContactForm() {
   }
 
   return (
-    <Card className="mx-auto max-w-md">
+    <Card className="mx-auto max-w-md my-20">
       <CardHeader>
         <CardTitle>Contact Us</CardTitle>
         <CardDescription>

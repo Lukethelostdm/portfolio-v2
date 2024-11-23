@@ -1,9 +1,7 @@
 import Intro from '@/components/intro'
-import Image from 'next/image'
-import BlogHome from '@/components/blog-page'
 import Project from '@/components/projects'
 import TechStack from '@/components/tech-stack'
-import ContactForm from '@/components/contact-form'
+import GetLatestPosts from '@/components/latest-posts'
 
 export default function Home() {
   return (
@@ -11,11 +9,9 @@ export default function Home() {
       <div className='container max-w-3xl'>
         <Intro />
       </div>
-      <ContactForm/>
       <Project/>
       <TechStack />
-      <BlogHome/>
-      
+      <GetLatestPosts/>
     </section>
   )
 }

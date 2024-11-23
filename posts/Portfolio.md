@@ -10,6 +10,8 @@ img: "/post-images/writing.jpg"
 
 **Overview**
 
+*Project Difficulty: 2/5.*
+
 This is the case study for my portfolio. The highs, lows and everything in between. Alongside this I will also include what I have learned and how I can improve my own skills as a developer. I'm hoping that this can be a landmark and a stepping stone for my future career.
 
 
