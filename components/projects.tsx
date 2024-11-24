@@ -64,7 +64,7 @@ const ProjectTags: React.FC<ProjectTagsProps> = ({ tags }) => {
 
 export default function Project() {
   return (
-    <div className='mx-auto max-w-6xl py-8'>
+    <div className='mx-auto max-w-6xl py-8 my-20'>
       <h2 className='mb-8 text-center text-3xl font-bold dark:text-white'>
         Projects
       </h2>
