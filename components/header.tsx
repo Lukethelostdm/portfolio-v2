@@ -16,7 +16,7 @@ export default function Header() {
             <Link href='./case-study'>Case Studies</Link>
           </li>
           <li className='transition-colors hover:text-foreground'>
-            <Link href='/projects'>Projects</Link>
+            <Link href='./projects'>Projects</Link>
           </li>
           <li className='transition-colors hover:text-foreground'>
             <Link href='./contact'>Contact</Link>

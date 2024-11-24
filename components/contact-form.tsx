@@ -1,7 +1,6 @@
 "use client";
 
 import { formSchema } from "@/lib/schemas";
-
 import {
   Card,
   CardHeader,
@@ -22,11 +21,12 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-
 import { z } from "zod";
 import { send } from "@/lib/email";
+import { useState } from "react"; // Import useState
 
 export default function ContactForm() {
+  const [successMessage, setSuccessMessage] = useState(""); // State for success message
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,7 +39,15 @@ export default function ContactForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log("Form submitted:", values);
-    send(values);
+    send(values)
+      .then(() => {
+        setSuccessMessage("Message sent!"); // Set success message
+        form.reset(); // Clear the form
+      })
+      .catch((error) => {
+        console.error("Error sending message:", error);
+        setSuccessMessage("Failed to send message. Please try again."); // Handle error
+      });
   }
 
   return (
@@ -120,6 +128,9 @@ export default function ContactForm() {
                 )}
               />
             </div>
+            {successMessage && ( // Display success message
+              <p className="mt-4 text-green-500">{successMessage}</p>
+            )}
             <Button type="submit" className="ml-auto">
               Submit
             </Button>

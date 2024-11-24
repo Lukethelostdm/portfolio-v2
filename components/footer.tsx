@@ -3,7 +3,8 @@ import { JSX, SVGProps } from 'react'
 const navigation = [
   {
     name: 'Facebook',
-    href: '#',
+    href: 'https://www.facebook.com/lukemthewebdev',
+    target: '_blank',
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
         <path
@@ -16,7 +17,8 @@ const navigation = [
   },
   {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/lukemthewebdev',
+    target: '_blank',
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
         //{' '}
@@ -30,7 +32,8 @@ const navigation = [
   },
   {
     name: 'LinkedIn',
-    href: '#',
+    href: 'https://www.linkedin.com/in/luke-mcnicol-b96512327/',
+    target: '_blank',
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill='currentColor' viewBox='0 0 448 512' {...props}>
         <path
@@ -42,7 +45,8 @@ const navigation = [
   },
   {
     name: 'GitHub',
-    href: '#',
+    href: 'https://github.com/Lukethelostdm',
+    target: '_blank',
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
         <path
