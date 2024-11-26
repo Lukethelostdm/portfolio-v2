@@ -5,6 +5,7 @@ import rehypeRaw from 'rehype-raw';
 import Link from 'next/link';
 import Image from 'next/image';
 
+export const runtime = "edge";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
