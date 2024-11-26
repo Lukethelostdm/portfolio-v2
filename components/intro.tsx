@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Bern from '@/public/Bern.png'
+import logo from '@/public/logo.png'
 
 export default function Intro() {
   return (
@@ -13,7 +13,7 @@ export default function Intro() {
       <div className='relative'>
         <Image
           className='flex-1 rounded-lg grayscale'
-          src={Bern}
+          src={logo}
           alt='Luke'
           width={175}
           height={175}
