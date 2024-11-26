@@ -3,7 +3,6 @@ import Project from '@/components/projects'
 import TechStack from '@/components/tech-stack'
 import GetLatestPosts from '@/components/latest-posts'
 
-export const runtime = "edge";
 
 
 export default function Home() {
