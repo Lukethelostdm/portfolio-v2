@@ -8,7 +8,6 @@ import { formSchema } from "./schemas";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const send = async (emailFormData: z.infer<typeof formSchema>) => {
-  // Ensure environment variables are set
   if (!process.env.RESEND_API_KEY || !process.env.RESEND_FROM_EMAIL) {
     throw new Error("Missing environment variables: RESEND_API_KEY or RESEND_FROM_EMAIL.");
   }

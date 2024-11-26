@@ -1,10 +1,10 @@
-import MarkdownIt from 'markdown-it';
 import { getAllPosts } from '@/lib/posts';
 import { notFound } from 'next/navigation';
-import Markdown from 'react-markdown'; // Markdown renderer
+import Markdown from 'react-markdown'; 
 import rehypeRaw from 'rehype-raw';
+import Link from 'next/link';
+import Image from 'next/image';
 
-const md = new MarkdownIt();
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -26,24 +26,25 @@ export default async function Post({ params }) {
     notFound();
   }
 
-  const htmlContent = md.render(post.content);
 
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8 my-20">
       {/* Back Button */}
-      <a
+      <Link
         href="/"
         className="inline-block mb-6 text-blue-600 hover:text-blue-800 transition-colors"
       >
         ← Back to Blog
-      </a>
+      </Link>
 
       {/* Featured Image */}
       {post.img && (
-        <img
+        <Image
           src={post.img}
           alt={post.title}
-          className="w-full h-64 object-cover rounded-lg mb-8"
+          width={600}
+              height={400}
+              layout="responsive"
         />
       )}
 

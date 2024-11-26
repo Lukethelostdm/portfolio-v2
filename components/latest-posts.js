@@ -1,5 +1,5 @@
-// components/LatestPosts.js
 import { getAllPosts } from '@/lib/posts';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function LatestPosts() {
@@ -12,7 +12,9 @@ export default function LatestPosts() {
         {posts.map((post) => (
           <div key={post.slug} className="bg-white dark:bg-gray-800 shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300">
             <Link href={`/posts/${post.slug}`}>
-              <img src={post.img} alt={post.title} className="w-full h-48 object-cover" />
+              <Image src={post.img} alt={post.title} width={600}
+              height={400}
+              layout="responsive"/>
               <div className="p-4">
                 <h3 className="text-lg font-semibold dark:text-white text-gray-800 hover:text-blue-500 transition-colors">
                   {post.title}

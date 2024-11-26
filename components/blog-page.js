@@ -1,5 +1,6 @@
-// app/page.js
 import { getAllPosts } from '@/lib/fullposts'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function BlogHome() {
   const posts = getAllPosts()
@@ -14,13 +15,15 @@ export default function BlogHome() {
             className="bg-white dark:bg-gray-800 shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300"
             >
             {/* Image */}
-            <a href={`/posts/${post.slug}`}>
-              <img
+            <Link href={`/posts/${post.slug}`}>
+              <Image
                 src={post.img}
                 alt={post.title}
-                className="w-full h-48 object-cover"
+                width={600}
+              height={400}
+              layout="responsive"
               />
-            </a>
+            </Link>
             
             {/* Content */}
             <div className="p-4">

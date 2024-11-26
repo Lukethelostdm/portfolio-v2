@@ -7,7 +7,7 @@ export default function Header() {
       <nav className='container flex max-w-3xl items-center justify-between'>
         <div>
           <Link href='/' className='font-serif text-xl font-bold'>
-            Luke 'Lost' Mcnicol
+            Luke Mcnicol
           </Link>
         </div>
 

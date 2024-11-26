@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Project {
   image: string
@@ -74,10 +75,12 @@ export default function Project() {
             key={index}
             className='overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg dark:bg-gray-800'
           >
-            <img
+            <Image
               src={project.image}
               alt={project.title}
-              className='h-48 w-full object-cover'
+              width={600}
+              height={400}
+              layout="responsive"
             />
             <h2 className='p-4 text-lg font-semibold text-gray-800 transition-colors hover:text-blue-500 dark:text-white'>
               {project.title}
