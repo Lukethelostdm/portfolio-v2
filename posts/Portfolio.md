@@ -3,7 +3,7 @@ title: "Creating a portfolio"
 date: "2024-11-20"
 author: "Luke"
 tag: "React"
-img: "/post-images/portfolio.PNG"
+img: "/post-images/writing.jpg"
 ---
 
 

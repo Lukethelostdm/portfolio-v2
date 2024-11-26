@@ -3,7 +3,7 @@ title: "Creating a website for an Author"
 date: "2024-10-29"
 author: "Luke"
 tag: "HTML"
-img: "/post-images/author.png"
+img: "/post-images/writing.jpg"
 ---
 
 **Overview**

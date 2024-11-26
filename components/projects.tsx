@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+
 interface Project {
   image: string
   title: string
@@ -22,25 +23,25 @@ const projects: Project[] = [
   {
     image: '/post-images/gallery.png',
     title: 'Art Gallery',
-    description: 'Building an artist gallery with cloudinary',
+    description: 'Building an artist gallery with Cloudinary.',
     link: '/posts/Art-Gallery',
     tags: ['React']
   },
   {
     image: '/post-images/author.png',
     title: 'Author',
-    description: 'Building a website to client specs.',
+    description: 'Building a website for an author.',
     link: '/posts/Author',
-    tags: ['CSS', 'Javascript']
+    tags: [ 'HTML', 'CSS', 'Javascript']
   },
 
 ]
 
 const tagStyles: Record<string, string> = {
-  HTML: 'bg-blue-100 text-blue-600',
-  CSS: 'bg-green-100 text-green-600',
-  Javascript: 'bg-yellow-100 text-yellow-600',
-  React: 'bg-purple-100 text-purple-600'
+  HTML: 'bg-blue-100 text-blue-600 my-4',
+  CSS: 'bg-green-100 text-green-600 my-4',
+  Javascript: 'bg-yellow-100 text-yellow-600 my-4',
+  React: 'bg-purple-100 text-purple-600 my-4'
   // Add more tags and styles as needed
 }
 
@@ -65,7 +66,7 @@ const ProjectTags: React.FC<ProjectTagsProps> = ({ tags }) => {
 
 export default function Project() {
   return (
-    <div className='mx-auto max-w-6xl py-8 my-20'>
+    <div className='mx-4 max-w-6xl sm:mx-auto'>
       <h2 className='mb-8 text-center text-3xl font-bold dark:text-white'>
         Projects
       </h2>
@@ -82,13 +83,18 @@ export default function Project() {
               height={400}
               layout="responsive"
             />
-            <h2 className='p-4 text-lg font-semibold text-gray-800 transition-colors hover:text-blue-500 dark:text-white'>
+            <h2 className='px-4 pt-2 text-lg font-semibold text-gray-800 transition-colors hover:text-blue-500 dark:text-white'>
               {project.title}
             </h2>
-            <p className='p-4'>{project.description}</p>
+            <p className='px-4 py-2'>{project.description}</p>
             <ProjectTags tags={project.tags} />
             <Link href={project.link}
-               className='p-4'>View Case Study
+               className='p-4 hover:underline flex flex-row '>View Case Study <svg
+               xmlns='http://www.w3.org/2000/svg'
+               width='12em'
+               height='2em'
+             >
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
             </Link>
           </div>
         ))}
