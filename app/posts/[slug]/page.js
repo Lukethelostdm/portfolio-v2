@@ -31,10 +31,10 @@ export default async function Post({ params }) {
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8 my-20">
       {/* Back Button */}
       <Link
-        href="/"
+        href=".case-study"
         className="inline-block mb-6 text-blue-600 hover:text-blue-800 transition-colors"
       >
-        ← Back to Blog
+        ← Back to studies
       </Link>
 
       {/* Featured Image */}
