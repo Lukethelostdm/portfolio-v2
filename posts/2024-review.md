@@ -3,7 +3,7 @@ title: "2024 in Review"
 date: "2024-12-18"
 author: "Luke"
 tag: "Year-review"
-img: "/post-images/writing.jpg"
+img: "/post-images/writing.png"
 ---
 
 For those of you who don't know, my name is Luke and I'm a self taught web developer from the UK. 2024 has been a life changing year for me. As a first time business owner, I've faced so many unexpected challenges and celebrated even more victories.

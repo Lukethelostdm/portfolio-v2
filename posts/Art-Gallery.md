@@ -3,7 +3,7 @@ title: "Creating an art gallery"
 date: "2024-11-23"
 author: "Luke"
 tag: "React"
-img: "/post-images/writing.jpg"
+img: "/post-images/writing.png"
 ---
 
 **Overview**

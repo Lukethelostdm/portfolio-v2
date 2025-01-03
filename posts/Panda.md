@@ -3,7 +3,7 @@ title: 'Building a full stack Saas'
 date: '2025-01-03'
 author: 'Luke'
 tag: 'Fullstack'
-img: '/post-images/writing.jpg'
+img: '/post-images/writing.png'
 ---
 
 **Overview**
