@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
           <div className='mt-8 md:order-1 md:mt-0'>
             <p className='text-center text-xs leading-5 text-muted-foreground'>
-              &copy; {new Date().getFullYear()} Luke Mcnicol. All rights
+              &copy; 2024 - {new Date().getFullYear()} Luke Mcnicol. All rights
               reserved.
             </p>
           </div>

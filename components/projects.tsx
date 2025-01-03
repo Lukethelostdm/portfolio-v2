@@ -29,11 +29,19 @@ const projects: Project[] = [
   },
   {
     image: '/post-images/author.png',
-    title: 'Author',
+    title: 'Author Site',
     description: 'Building a website for an author.',
     link: '/posts/Author',
     tags: [ 'HTML', 'CSS', 'Javascript']
   },
+  {
+    image: '/post-images/panda.png',
+    title: 'PingPanda SaaS',
+    description: 'Building a full stack Saas',
+    link: '/posts/Panda',
+    tags: [ 'React', 'Database', 'Fullstack' ]
+  },
+ 
 
 ]
 
@@ -41,7 +49,13 @@ const tagStyles: Record<string, string> = {
   HTML: 'bg-blue-100 text-blue-600 my-4',
   CSS: 'bg-green-100 text-green-600 my-4',
   Javascript: 'bg-yellow-100 text-yellow-600 my-4',
-  React: 'bg-purple-100 text-purple-600 my-4'
+  React: 'bg-purple-100 text-purple-600 my-4',
+  Next: 'bg-orange-100 text-orange-600 my-4',
+  Jstack: 'bg-red-100 text-red-600 my-4',
+  API: 'bg-pink-100 text-pink-600 my-4',
+  Database: 'bg-teal-100 text-teal-600 my-4',
+  Fullstack: 'bg-cyan-100 text-cyan-600 my-4',
+
   // Add more tags and styles as needed
 }
 
